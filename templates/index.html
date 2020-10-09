@@ -1,0 +1,294 @@
+{% load static %}
+{% static "images" as baseUrl %}    <!-- for images -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Person Classifier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'styles/dropzone.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/app.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center"  style="margin-bottom:20px">
+        <p class="navbar-brand" style="font-size:33px; margin-top:10px; margin-bottom:10px; color:#6A5ACD"><strong>DEEP LEARNING - CIFAR-10 IMAGE CLASSIFICATION</strong></p>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+              <div class="col card-wrapper" data-player="lionel_messi">
+                <div class="card border-0">
+                    <div style="margin-top:20px">
+                        <img src="{% static 'images/cifar10_images/airplane.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                    </div>
+                    <div>
+                        <h5 class="text-uppercase card-title" style="margin-left:55px">airplane</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="lionel_messi">
+              <div class="card border-0">
+                  <div style="margin-top:20px">
+                      <img src="{% static 'images/cifar10_images/automobile.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                  </div>
+                  <div>
+                      <h5 class="text-uppercase card-title" style="margin-left:40px">automobile</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col card-wrapper" data-player="lionel_messi">
+              <div class="card border-0">
+                  <div style="margin-top:20px">
+                      <img src="{% static 'images/cifar10_images/bird.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                  </div>
+                  <div>
+                      <h5 class="text-uppercase card-title" style="margin-left:80px">bird</h5>
+                  </div>
+              </div>
+            </div>
+
+              <div class="col card-wrapper" data-player="lionel_messi">
+                <div class="card border-0">
+                    <div style="margin-top:20px">
+                        <img src="{% static 'images/cifar10_images/cat.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                    </div>
+                    <div>
+                        <h5 class="text-uppercase card-title" style="margin-left:86px">cat</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="lionel_messi">
+              <div class="card border-0">
+                  <div style="margin-top:20px">
+                      <img src="{% static 'images/cifar10_images/deer.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                  </div>
+                  <div>
+                      <h5 class="text-uppercase card-title" style="margin-left:79px">deer</h5>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="row">
+              <div class="col card-wrapper" data-player="lionel_messi">
+                <div class="card border-0">
+                    <div style="margin-top:20px">
+                        <img src="{% static 'images/cifar10_images/dog.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                    </div>
+                    <div>
+                        <h5 class="text-uppercase card-title" style="margin-left:82px">dog</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="lionel_messi">
+              <div class="card border-0">
+                  <div style="margin-top:20px">
+                      <img src="{% static 'images/cifar10_images/frog.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                  </div>
+                  <div>
+                      <h5 class="text-uppercase card-title" style="margin-left:73px">frog</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col card-wrapper" data-player="lionel_messi">
+              <div class="card border-0">
+                  <div style="margin-top:20px">
+                      <img src="{% static 'images/cifar10_images/horse.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                  </div>
+                  <div>
+                      <h5 class="text-uppercase card-title" style="margin-left:70px">horse</h5>
+                  </div>
+              </div>
+            </div>
+
+              <div class="col card-wrapper" data-player="lionel_messi">
+                <div class="card border-0">
+                    <div style="margin-top:20px">
+                        <img src="{% static 'images/cifar10_images/ship.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                    </div>
+                    <div>
+                        <h5 class="text-uppercase card-title" style="margin-left:82px">ship</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="lionel_messi">
+              <div class="card border-0">
+                  <div style="margin-top:20px">
+                      <img src="{% static 'images/cifar10_images/truck.jpg' %}" style="width:130px; height:130px; border-radius:50%; margin-left:20%">
+                  </div>
+                  <div>
+                      <h5 class="text-uppercase card-title" style="margin-left:70px">truck</h5>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-sm-6" style="margin-top:70px, margin-left:70px">
+                <div class="row" style="margin-top:50px">
+                    <div class="col-4 mx-auto">
+                        <form method="post" action="uploadPic" enctype="multipart/form-data">
+                            {% csrf_token %}
+                             <input type="file" name="image" id="submitBtn" class="btn btn-success" accept="image/*" style="padding:75px 25px 75px 25px">
+                             <input type="submit" value="CLICK TO CLASSIFY YOUR SELECTED IMAGE" id="submitBtn" class="btn btn-success" style="margin-top:20px; padding:10px">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-6"  style="margin-top:30px">
+
+              {% if winner == "AIRPLANE" %}
+                    <div class="col card-wrapper" data-player="lionel_messi">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/airplane.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="">
+                              <h4 class="text-uppercase card-title" style="margin-left:80px; margin-top:20px">AIRPLANE</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "AUTOMOBILE" %}
+                  <div class="col card-wrapper" data-player="maria_sharapova">
+                          <div class="card border-0">
+                              <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                                  <img class="w-100 h-100" src="{% static 'images/cifar10_images/automobile.jpg' %}" alt="Card image cap">
+                              </div>
+                              <div class="card-body text-center mt-4">
+                                  <h4 class="text-uppercase card-title">AUTOMOBILE</h4>
+                              </div>
+                          </div>
+                  </div>
+              {% elif winner == "BIRD" %}
+                  <div class="col card-wrapper" data-player="roger_federer">
+                          <div class="card border-0">
+                              <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                                  <img class="w-100 h-100" src="{% static 'images/cifar10_images/bird.jpg' %}" alt="Card image cap">
+                              </div>
+                              <div class="card-body text-center mt-4">
+                                  <h4 class="text-uppercase card-title">BIRD</h4>
+                              </div>
+                          </div>
+                  </div>
+              {% elif winner == "CAT" %}
+                  <div class="col card-wrapper" data-player="serena_williams">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/cat.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title">CAT</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "DEER" %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/deer.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title" style="margin-top:-25px">DEER</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "DOG" %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/dog.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title" style="margin-top:-25px">DOG</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "FROG" %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/frog.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title" style="margin-top:-25px">FROG</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "HORSE" %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/horse.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title" style="margin-top:-25px">HORSE</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "SHIP" %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/ship.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title" style="margin-top:-25px">SHIP</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% elif winner == "TRUCK" %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_images/truck.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title" style="margin-top:-25px">TRUCK</h4>
+                          </div>
+                      </div>
+                  </div>
+              {% else %}
+                  <div class="col card-wrapper" data-player="virat_kohli">
+                      <div class="card border-0">
+                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                              <img class="w-100 h-100" src="{% static 'images/cifar10_all_image.jpg' %}" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center mt-4">
+                              <h4 class="text-uppercase card-title"></h4>
+                          </div>
+                      </div>
+                  </div>
+              {% endif %}
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="{% static 'js/dropzone.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+</html>
